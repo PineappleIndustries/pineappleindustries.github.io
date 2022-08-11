@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap project documentation theme for developers</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">    
+    <link rel="shortcut icon" href="favicon.ico">  
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <!-- FontAwesome JS -->
+    <script defer src="serverdocs/fontawesome/js/all.js"></script>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="serverdocs/plugins/bootstrap/css/bootstrap.min.css">   
+    <!-- Plugins CSS -->    
+    <link rel="stylesheet" href="serverdocs/plugins/prism/prism.css">
+    <link rel="stylesheet" href="serverdocs/plugins/elegant_font/css/style.css">  
+    <link rel="stylesheet" href="serverdocs/plugins/simplelightbox/simple-lightbox.min.css">
+      
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="serverdocs/css/styles.css">
+    
+</head> 
+
+<body class="body-pink">
+    <div class="page-wrapper">
+        <!-- ******Header****** -->
+        <header id="header" class="header">
+            <div class="container">
+                <div class="branding">
+                    <h1 class="logo">
+                        <a href="docs_home.html">
+                            <span aria-hidden="true" class="icon_documents_alt icon"></span>
+                            <span class="text-highlight"><strong>ManPlan Docs</strong></span>
+                        </a>
+                    </h1>
+                    
+                </div><!--//branding-->
+                
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="docs_home.html">Home</a></li>
+                    <li class="breadcrumb-item active">N.P.C.'s</li>
+                </ol>
+                
+                <div class="top-search-box">
+	                 <form class="form-inline search-form justify-content-center" action="" method="get">
+	            
+			            <input type="text" placeholder="Search..." name="search" class="form-control search-input">
+			            
+			            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+			            
+			        </form>
+                </div>
+                
+            </div><!--//container-->
+        </header><!--//header-->
+        <div class="doc-wrapper">
+            <div class="container">
+                <div id="doc-header" class="doc-header text-center">
+                    <h1 class="doc-title">N.P.C.'s</h1>
+                    <div class="meta"><i class="far fa-clock"></i> Last updated: June 13th, 2022</div>
+                </div><!--//doc-header-->
+                <div class="doc-body row">
+                    <div class="doc-content col-md-9 col-12 order-1">
+                        <div class="content-inner">
+                            <section id="download-section" class="doc-section">
+                                <h2 class="section-title">What It Is</h2>
+                                <div class="section-block">
+                                    <p>The N.P.C.'s plugin (or "Citizens") allows you to create custom N.P.C.'s that are able to walk around, talk to players, and much more. Here is a guide on some commands that I used to create N.P.C.'s. <br />
+                                        Anything that you should change in the commands will be <a class="text-highlight">highlighted in pink and underlined</a>, like so.
+                                    </p>
+                                </div>
+                            </section><!--//doc-section-->
+                            <section id="installation-section" class="doc-section">
+                                <h2 class="section-title">Working with N.P.C's</h2>
+                                <div id="step1"  class="section-block">
+                                    <h3 class="block-title">Creating an N.P.C.</h3>
+                                    <p>To create an N.P.C, type <strong>"/npc create <a class="text-highlight">[npc-name]</a>".</strong> An example of this would be "/npc create John." This should spawn an npc where you are with the name you specified above its head. Other than that, there is not much that it does. We should be able to change that with a few more commands.
+                                    </p>
+                                </div><!--//section-block-->
+                                <div id="step2"  class="section-block">
+                                    <h3 class="block-title">Altering the N.P.C.'s Appearance</h3>
+                                    <p>I believe that the N.P.C. that you just created should be selected, but if any commands that you run to modify it show up on another N.P.C. or do not work and show up with a message similar to "No N.P.C. selected," look at the N.P.C. you created and type <strong>"/npc select</strong>. This should select the N.P.C.
+                                     </p>To have the N.P.C. stare or look at players who approach it, type <strong>"/npc lookclose"</strong>. It should now begin to look at you.</p>
+                                    <p>To alter the mob type of the N.P.C. (from a player to something else if you have not changed its mob type yet), type <strong>"/npc type <a class="text-highlight">[mob-type]</a>".</strong> An example of this would be "/npc type pig."
+                                    <p>To alter the skin of the N.P.C., what I have been using is <strong>"/npc skin <a class="text-highlight">[username]</a>".</strong> An example of this would be "/npc skin Technoblade," which would alter the N.P.C.'s skin to the skin of the account with the username Technoblade.</p>
+                                </div><!--//section-block-->
+                                <div id="step3"  class="section-block">
+                                    <h3 class="block-title">Adding Dialogue (or Monologue) to N.P.C.'s</h3>
+                                    <p>Working with the N.P.C. text editor is able to be a bit tricky, from my experience (you may not experience that, though). You will open up the N.P.C. text editor by typing <strong>"/npc text"</strong>. A message in chat should notify you that you have opened the N.P.C. text editor. You should be provided with a few options on what you would like to do, but I will explain them here just for the sake of clarity.
+                                    </p>
+                                        <div class="col-md-6 col-12">
+                                            <h6>Un-ordered list example</h6>
+                                            <ul class="list">
+        										<li>Lorem ipsum dolor sit amet.</li>
+        										<li>Aliquam tincidunt mauris.</li>
+        										<li>Ultricies eget vel aliquam libero.
+        											<ul>
+        												<li>Turpis pulvinar</li>
+        												<li>Feugiat scelerisque</li>
+        												<li>Ut tincidunt</li>
+        											</ul>
+        										</li>
+        										<li>Pellentesque habitant morbi.</li>
+        										<li>Praesent dapibus, neque id.</li>
+        									</ul>
+                                        </div>
+                                </div><!--//section-block-->
+                             <section id="tables-section" class="doc-section">
+                                <h2 class="section-title">Commands List</h2>
+                                <div class="section-block">
+                                    <p>I apologize for any confusion I may have caused from my not-so-well-worded step-by-step section, so here is a list of commands that I have used that have helped me in N.P.C. customization. Things that you should change will be in brackets.
+                                    </p>
+                                </div>
+                                <h6>Useful Commands</h6>
+                                <div class="table-responsive">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th>Command</th>
+                                                <th>Description</th>
+                                                <th>Example</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>/npc create [name]</td>
+                                                <td>Creates an N.P.C. The N.P.C. should spawn as an Alex skin or the <br />
+                                                    skin of the player with the name of your N.P.C.</td>
+                                                <td>/npc create Jeff</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>Jacob</td>
+                                                <td>Thornton</td>
+                                                <td>@fat</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td>Larry</td>
+                                                <td>the Bird</td>
+                                                <td>@twitter</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                            </section><!--//doc-section-->
+                            <section id="video-section" class="doc-section">
+                                <h2 class="section-title">Video Showcase</h2>
+                                <div class="section-block">
+                                    <div class="row">
+                                        <div class="col-md-6 col-12">
+                                            <p>This video should cover a decent portion of the commands referenced above (with the exception of "/npc rename".</p>
+                                            <!-- 16:9 aspect ratio -->
+                                            <div class="embed-responsive embed-responsive-16by9">
+                                                <video class="justify-content-center" width="960" height="600" controls>
+                                                    <source src="serverdocs/images/npc_plugin_showcase.mp4" type="video/mp4">
+                                                </video>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div><!--//content-inner-->
+                    </div><!--//doc-content-->
+                    <div class="doc-sidebar col-md-3 col-12 order-0 d-none d-md-flex">
+                        <div id="doc-nav" class="doc-nav">
+	                            <nav id="doc-menu" class="nav doc-menu flex-column sticky">
+		                            <li class="nav-item">
+	                                    <a class="nav-link scrollto" href="#download-section">What It Is</a>
+		                            </li>
+		                            <li class="nav-item">
+	                                    <a class="nav-link scrollto" href="#installation-section">Installation</a>
+		                            </li>
+                                    <nav class="nav doc-sub-menu nav flex-column">
+	                                    <li class="nav-item">
+                                            <a class="nav-link scrollto" href="#step1">Step One</a>
+	                                    </li>
+	                                    <li class="nav-item">
+                                            <a class="nav-link scrollto" href="#step2">Step Two</a>
+	                                    </li>
+	                                    <li class="nav-item">
+                                            <a class="nav-link scrollto" href="#step3">Step Three</a>
+	                                    </li>
+                                    </nav><!--//nav-->
+                                    <li class="nav-item">
+	                                     <a class="nav-link scrollto" href="#tables-section">Commands List</a>
+                                    </li>
+                                    <li class="nav-item">
+	                                     <a class="nav-link scrollto" href="#video-section">Video</a>
+                                    </li>
+	                            </nav><!--//doc-menu-->
+	                        
+                        </div>
+                    </div><!--//doc-sidebar-->
+                </div><!--//doc-body-->              
+            </div><!--//container-->
+        </div><!--//doc-wrapper-->   
+    </div><!--//page-wrapper-->
+    
+    <footer id="footer" class="footer text-center">
+        <div class="container">
+            <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
+            <small class="copyright">Designed with <span class="sr-only">love</span><i class="fas fa-heart"></i> by <a href="https://themes.3rdwavemedia.com/" target="_blank">Xiaoying Riley</a> for developers</small>
+            
+        </div><!--//container-->
+    </footer><!--//footer-->
+    
+     
+    <!-- Main Javascript -->          
+    <script src="serverdocs/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="serverdocs/plugins/prism/prism.js"></script>      
+    <script src="serverdocs/plugins/stickyfill/dist/stickyfill.min.js"></script>      
+    <script src="serverdocs/plugins/gumshoe/gumshoe.polyfills.min.js"></script> 
+    <script src="serverdocs/plugins/simplelightbox/simple-lightbox.min.js"></script>                                                          
+    <script src="serverdocs/js/main.js"></script>
+    
+</body>
+</html> 
+
