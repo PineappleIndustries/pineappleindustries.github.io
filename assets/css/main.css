@@ -1978,6 +1978,16 @@ input, select, textarea {
 				.icon.circle.fa-dribbble:hover {
 					background: #df93b8;
 				}
+			
+				.icon.circle.fa-discord {
+					background: #6a88aa;
+					color: #fff;
+				}
+			
+				.icon.circle.fa-discord:hover {
+					background: #7f9bbb;
+				
+				}
 
 		.icon.featured {
 			cursor: default;
