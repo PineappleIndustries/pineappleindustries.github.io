@@ -107,6 +107,19 @@
         										<li>Praesent dapibus, neque id.</li>
         									</ul>
                                         </div>
+                                <section id="callouts-section" class="doc-section">
+                                    <h2 class="section-title">Waypoints and N.P.C. Movement</h2>
+                                    <div class="section-block">
+                                        <p>Waypoints will allow your N.P.C. to walk around and give more life to it in general. There is also <a href="#video-section">a video</a> showcasing how this works.
+                                        </p>
+                                        <h2>How Waypoints Work</h2>
+                                        <p>Waypoints, as you may have assumed, are what they sound like. They are points you set for the N.P.C. of your choice to walk to. Waypoint commands do not begin with the usual <strong>"/npc"</strong> command but instead being with <strong>"/waypoint".</strong></p>
+                                        <p>There are three ways for an N.P.C. to walk, and are triggered or set by using the <strong>"/waypoint provider <a class="text-highlight">[walk-type]</a>"</strong> command. These three walk types are <strong>linear, guided, and wander</strong>. If you would like to have the N.P.C. wander all around the map, set the walk type to "wander." If you would like to have a set path for the N.P.C., use "linear" (which is the default, I believe) or "guided" and add some waypoints. I feel like "linear" may be easier to work with (though I have not used "guided" before) because the N.P.C. walks in the sequence of waypoints you set, whereas "guided" will walk to the waypoints you set for it randomly.</p>
+                                        <h2>Creating Waypoints</h2>
+                                        <p>Waypoints are created using <strong>"/waypoint add <a class="text-highlight">[x] [y] [z]</a>".</strong> Once you set that waypoint, the N.P.C. you have set that waypoint for should immediately begin walking towards that waypoint.</p>
+                                        <h2>Crouching and Other Things</h2>
+                                        <p>You are able to have an N.P.C. crouch with <strong>"/npc crouch"</strong> or <strong>"/npc sneak"</strong>. There are other options as well which I would recommend you view on <a href="https://wiki.citizensnpcs.co/Waypoints">the Waypoint Wiki page</a> or <a href="https://wiki.citizensnpcs.co/Commands#Waypoint_commands">the Waypoint commands on the Commands page</a>.</p>
+                                    </div>
                                 </div><!--//section-block-->
                              <section id="tables-section" class="doc-section">
                                 <h2 class="section-title">Commands List</h2>
@@ -127,23 +140,46 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <th scope="row">1</th>
                                                 <td>/npc create [name]</td>
                                                 <td>Creates an N.P.C. The N.P.C. should spawn as an Alex skin or the <br />
                                                     skin of the player with the name of your N.P.C.</td>
                                                 <td>/npc create Jeff</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">2</th>
-                                                <td>Jacob</td>
-                                                <td>Thornton</td>
-                                                <td>@fat</td>
+                                                <td>/npc lookclose</td>
+                                                <td>Causes the N.P.C. to look at the nearest player.</td>
+                                                <td>/npc lookclose</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">3</th>
-                                                <td>Larry</td>
-                                                <td>the Bird</td>
-                                                <td>@twitter</td>
+                                                <td>/npc rename [name]</td>
+                                                <td>Renames the N.P.C.</td>
+                                                <td>/npc rename Gerald</td>
+                                            </tr>
+                                            <tr>
+                                                <td>/npc text</td>
+                                                <td>Opens and exits the N.P.C. text editor</td>
+                                                <td>/npc text</td>
+                                            </tr>
+                                            <tr>
+                                                <td>/npc select</td>
+                                                <td>Selects the N.P.C. that the player is looking at. <br />
+                                                    All commands following that will apply to that N.P.C.</td>
+                                                <td>/npc select</td>
+                                            </tr>
+                                            <tr>
+                                                <td>/npc crouch or /npc sneak</td>
+                                                <td>Causes the selected N.P.C. to crouch/sneak</td>
+                                                <td>/npc crouch or /npc sneak</td>
+                                            </tr>
+                                            <tr>
+                                                <td>/waypoint provider [provider-type]</td>
+                                                <td>Allows you to alter the way in which the N.P.C. interacts with waypoints or moves</td>
+                                                <td>/waypoint provider wander</td>
+                                            </tr>
+                                            <tr>
+                                                <td>/npc copy</td>
+                                                <td>Duplicates the selected N.P.C. to your location</td>
+                                                <td>/npc copy</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -158,6 +194,10 @@
                                             <div class="embed-responsive embed-responsive-16by9">
                                                 <video class="justify-content-center" width="960" height="600" controls>
                                                     <source src="serverdocs/images/npc_plugin_showcase.mp4" type="video/mp4">
+                                                </video>
+                                                <h5>A Video Showcasing the Waypoint-Related Commands</h5>
+                                                <video class="justify-content-center" width="960" height="600" controls>
+                                                    <source src="serverdocs/images/npc_waypoints.mp4" type="video/mp4">
                                                 </video>
                                             </div>
                                         </div>
@@ -186,6 +226,9 @@
                                             <a class="nav-link scrollto" href="#step3">Step Three</a>
 	                                    </li>
                                     </nav><!--//nav-->
+                                    <li class="nav-item">
+                                        <a class="nav-link scrollto" href="#callouts-section">Waypoints</a>
+                                    </li>
                                     <li class="nav-item">
 	                                     <a class="nav-link scrollto" href="#tables-section">Commands List</a>
                                     </li>
